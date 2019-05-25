@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= h1
+  p #{greeting}
+  p #{authURL}
+
+  form(action='spotify/spotLogin', method='get')
+    button(class='btn btn-success btn-lg', 
+          name='spotLogin') Login to Spotify
